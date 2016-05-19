@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <title>testing</title>
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<input type="text" id="a">
+<input type="password" id="a">
 <input type="text" id="b">
 <button id="c">Submit</button>
-<span id="d"></span>
+<input type="text" id="d" readonly onfocus="this.select();" onmouseup="return false;">
 <script src="bundle.min.js"></script>
 </body>
 </html>
