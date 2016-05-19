@@ -1,0 +1,17 @@
+{
+  "name": "pbkdf2-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "uglify-js": "^2.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "rm -rf dist && mkdir dist && cp index.html dist && node node_modules/browserify/bin/cmd.js main.js -o dist/bundle.js && node_modules/uglify-js/bin/uglifyjs dist/bundle.js -c -m -o dist/bundle.min.js && rm dist/bundle.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
