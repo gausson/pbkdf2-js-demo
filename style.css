@@ -3,7 +3,7 @@ body {
     padding-top: 50px;
 }
 
-input[type=text] {
+input[type=text], input[type=password] {
     display: block;
     margin: 0 auto 20px;
     padding: 10px;
