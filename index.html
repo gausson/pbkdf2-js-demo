@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>testing</title>
-<link rel="stylesheet" type="text/css" href="normalize.css">
-<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<title>testing</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<input type="password" id="a">
-<input type="text" id="b">
-<button id="c">Submit</button>
-<input type="text" id="d" readonly onfocus="this.select();" onmouseup="return false;">
+<div>
+	<input type="password" placeholder="password" autocomplete="off" autocapitalize="none" id="a">
+	<input type="text" placeholder="salt" autocomplete="off" autocapitalize="none" id="b">
+	<button id="c">Generate</button>
+	<input type="text" placeholder="result" id="d" readonly onfocus="this.select();" onmouseup="return false;">
+</div>
 <script src="bundle.min.js"></script>
 </body>
 </html>
