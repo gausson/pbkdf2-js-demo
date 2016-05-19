@@ -5,6 +5,5 @@ document.getElementById('c').onclick = function() {
 	var salt = document.getElementById('b').value;
 	var iterations = 314159;
 	var key = pbkdf2_hmac(password, salt, iterations, 32);
-	var result_field = document.getElementById('d');
-	result_field.innerHTML = key.toString('hex')
+	document.getElementById('d').value = key.toString('hex');
 }
